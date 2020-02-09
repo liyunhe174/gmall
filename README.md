@@ -1,2 +1,4 @@
 # gmall 本地修改版本
-gamll-user用户服务port:8001
+
+gmall_user_service port:8881
+gmall_user_web   port : 8882
