@@ -1,13 +1,13 @@
 package com.lyh.gmall.user.service.impl;
 
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.lyh.gmall.bean.pojo.UmsMember;
 import com.lyh.gmall.bean.pojo.UmsMemberReceiveAddress;
 import com.lyh.gmall.bean.service.UserService;
 import com.lyh.gmall.user.mapper.UmsMemberMapper;
 import com.lyh.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

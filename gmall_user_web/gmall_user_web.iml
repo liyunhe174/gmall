@@ -25,6 +25,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="gmall_web_util" />
     <orderEntry type="module" module-name="gmall_common_util" />
     <orderEntry type="module" module-name="gmall_api" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-starter:1.2.3" level="project" />

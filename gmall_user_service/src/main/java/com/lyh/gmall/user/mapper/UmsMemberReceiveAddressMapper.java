@@ -9,5 +9,6 @@ import tk.mybatis.mapper.common.Mapper;
  * @Date: 2020/2/8 16:28
  * @Description:   用户收货地址类
  */
+@SuppressWarnings("all")
 public interface UmsMemberReceiveAddressMapper extends Mapper<UmsMemberReceiveAddress> {
 }
