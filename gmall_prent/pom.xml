@@ -17,6 +17,8 @@
         <module>../gmall_service_util</module>
         <module>../gmall_user_service</module>
         <module>../gmall_user_web</module>
+        <module>../gmall_manage_service</module>
+        <module>../gmall_manage_web</module>
     </modules>
 
 
