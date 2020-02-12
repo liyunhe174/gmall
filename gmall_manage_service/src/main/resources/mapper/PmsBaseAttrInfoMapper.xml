@@ -3,4 +3,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lyh.gmall.manage.mapper.PmsBaseAttrInfoMapper">
 
+    <insert id="insetInfo" parameterType="com.lyh.gmall.bean.pojo.PmsBaseAttrInfo">
+
+      <!--
+        keyColumn 对应数据的那一列
+        keyProperty  对应实体列的那个属性
+        order    SQL与的执行顺序，在insert之前还是之后
+        resultType  返回id的类型
+      -->
+      <selectKey keyColumn="id" keyProperty="id" order="AFTER" resultType="string">
+          select LAST_INSERT_ID()
+      </selectKey>
+
+       insert into pms_base_attr_info (attr_name, catalog3_id, is_enabled)
+       values (#{attrName},#{catalog3Id},#{isEnabled})
+
+    </insert>
+
+
 </mapper>

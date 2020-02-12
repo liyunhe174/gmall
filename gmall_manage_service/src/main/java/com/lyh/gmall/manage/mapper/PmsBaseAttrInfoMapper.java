@@ -1,6 +1,7 @@
 package com.lyh.gmall.manage.mapper;
 
 import com.lyh.gmall.bean.pojo.PmsBaseAttrInfo;
+import com.sun.org.apache.xml.internal.security.Init;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
@@ -9,4 +10,5 @@ import tk.mybatis.mapper.common.Mapper;
  * @Description:
  */
 public interface PmsBaseAttrInfoMapper extends Mapper<PmsBaseAttrInfo> {
+    int insetInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
 }

@@ -28,4 +28,13 @@ public interface PmsBaseAttrService {
      * @Datetime  2020/2/10 21:23
      */
     List<PmsBaseAttrValue> getAttrValueList(String attrId);
+
+    /**
+     * 描述: 更新平台属性，添加、修改
+     * @param pmsBaseAttrInfo: 属性信息中做了表之间的关系
+     * @return boolean
+     * @author  liyunhe
+     * @Datetime  2020/2/11 10:41
+     */
+    int saveAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
 }

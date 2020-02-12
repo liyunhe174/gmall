@@ -17,4 +17,7 @@
 ##### gmall_manage  主要是商品管理项目
       gmall_manage_service port=8871  主要负责商品管理的后端开发
       gamll_manage_web     port=8872  主要负责商品管理的开端开发
+     
+
+
       

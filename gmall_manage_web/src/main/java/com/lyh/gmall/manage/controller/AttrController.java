@@ -4,10 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.lyh.gmall.bean.pojo.PmsBaseAttrInfo;
 import com.lyh.gmall.bean.pojo.PmsBaseAttrValue;
 import com.lyh.gmall.bean.service.PmsBaseAttrService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -41,6 +38,16 @@ public class AttrController {
     public List<PmsBaseAttrValue> getAttrValueList(String attrId) {
         List<PmsBaseAttrValue> pmsBaseAttrValues = pmsBaseAttrService.getAttrValueList(attrId);
         return pmsBaseAttrValues;
+    }
+
+
+    @RequestMapping(value = "/saveAttrInfo")
+    public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo) {
+        int info = pmsBaseAttrService.saveAttrInfo(pmsBaseAttrInfo);
+        if (info > 0) {
+            return "success";
+        }
+        return "error";
     }
 
 
